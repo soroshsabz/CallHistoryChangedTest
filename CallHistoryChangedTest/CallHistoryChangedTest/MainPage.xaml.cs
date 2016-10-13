@@ -28,7 +28,7 @@ namespace CallHistoryChangedTest
         {
             this.InitializeComponent();
 
-            if (BackgroundTaskRegistration.AllTasks.Count > 0)
+            if (!(BackgroundTaskRegistration.AllTasks.Count > 0))
             {
                 RegisterBackgroundTask(typeof(CallHangupTask),
                     new PhoneTrigger(PhoneTriggerType.CallOriginDataRequest, false));
