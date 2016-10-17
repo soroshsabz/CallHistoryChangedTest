@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using CallHangUpTask;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -32,8 +33,6 @@ namespace CallHistoryChangedTest
             {
                 RegisterBackgroundTask(typeof(CallHangupTask),
                     new PhoneTrigger(PhoneTriggerType.CallOriginDataRequest, false));
-
-                Toast.Send("Background tasks is now registered");
             }
             else
                 Toast.Send("Registered background tasks");
@@ -64,6 +63,7 @@ namespace CallHistoryChangedTest
 
                 builder.SetTrigger(trigger);
                 BackgroundTaskRegistration taskRegistration = builder.Register();
+                Toast.Send("Background tasks is now registered");
             }
             else
                 Toast.Send("Background agent access denied");

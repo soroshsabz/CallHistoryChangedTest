@@ -7,7 +7,7 @@ using Windows.ApplicationModel.Background;
 using Windows.ApplicationModel.Calls.Background;
 using Windows.ApplicationModel.Calls.Provider;
 
-namespace CallHistoryChangedTest
+namespace CallHangUpTask
 {
     public sealed class CallHangupTask : IBackgroundTask
     {

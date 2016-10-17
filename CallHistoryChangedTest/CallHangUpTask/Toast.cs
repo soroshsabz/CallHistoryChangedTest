@@ -1,7 +1,7 @@
 ﻿using Windows.Data.Xml.Dom;
 using Windows.UI.Notifications;
 
-namespace CallHistoryChangedTest
+namespace CallHangUpTask
 {
     public static class Toast
     {

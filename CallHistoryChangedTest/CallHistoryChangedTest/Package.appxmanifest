@@ -21,7 +21,7 @@
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
       <Extensions>
-        <Extension Category="windows.backgroundTasks" EntryPoint="CallHistoryChangedTest.CallHangupTask">
+        <Extension Category="windows.backgroundTasks" EntryPoint="CallHangUpTask.CallHangupTask">
           <BackgroundTasks>
             <uap:Task Type="phoneCall" />
           </BackgroundTasks>
