@@ -32,7 +32,7 @@ namespace CallHistoryChangedTest
             if (!(BackgroundTaskRegistration.AllTasks.Count > 0))
             {
                 RegisterBackgroundTask(typeof(CallHangupTask),
-                    new PhoneTrigger(PhoneTriggerType.CallOriginDataRequest, false));
+                    new PhoneTrigger(PhoneTriggerType.CallHistoryChanged, false));
             }
             else
                 Toast.Send("Registered background tasks");
